@@ -1,6 +1,6 @@
 defmodule Calcy.Evaluator do
     @moduledoc """
-    Documentation for Evaluator.
+    Documentation for the Evaluator.
     """
 
     import IO.ANSI

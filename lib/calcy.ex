@@ -19,6 +19,8 @@ defmodule Calcy do
   """
   def continue(tokens, env) do
     tree = Calcy.Parser.parse(tokens)
+    # ir = (Calcy.IR.ir(tree))
+    # IO.inspect(ir)
     eval(tree, env)
   end
 

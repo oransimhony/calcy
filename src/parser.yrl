@@ -21,7 +21,7 @@ expression -> term : '$1'.
 expression -> expression plus term : { plus, '$1', '$3' }.
 expression -> expression minus term : { minus, '$1', '$3' }.
 
-assignment -> ident asgn expression : [{ assign, unwrap('$1'), '$3' }].
+assignment -> ident asgn expression : { assign, unwrap('$1'), '$3' }.
 
 term -> term mult number : { mult, '$1', '$3' }.
 term -> term divi number : { divi, '$1', '$3' }.
