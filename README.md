@@ -2,7 +2,7 @@
 
 A CLI application I built using [leex](http://erlang.org/doc/man/leex.html) and [yecc](http://erlang.org/doc/man/yecc.html).
 
-This calcy can solve expressions with + - * / ^ and also use variables.
+Calcy can solve expressions with + - * / ^ and also use variables.
 
 ## Installation
 For this program to work you need to have [Elixir](https://elixir-lang.org/install.html) installed on your computer.
