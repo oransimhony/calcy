@@ -8,15 +8,16 @@ defmodule Calcy.CLI do
     Calls the REPL without minding the arguments
     """
     def main(_args) do
-        repl(%{})
+        {:ok, server} = Calcy.Env.start_link([])
+        repl(server)
     end
 
     @doc """
     Interactive REPL for calcy
     """
-    def repl(env) do
+    def repl(server) do
         program = IO.gets green() <> "calcy> " <> reset()
-        env = Calcy.run(program, env)
-        repl(env)
+        server = Calcy.run(program, server)
+        repl(server)
     end
 end

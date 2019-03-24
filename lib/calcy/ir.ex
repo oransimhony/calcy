@@ -24,6 +24,10 @@ defmodule Calcy.IR do
         ir(left) ++ ir(right) ++ [:div]
     end
 
+    def ir({:pow, left, right}) do
+        ir(left) ++ ir(right) ++ [:pow]
+    end
+
     def ir({:int, num}) do
         [{:push, num}]
     end
@@ -38,6 +42,14 @@ defmodule Calcy.IR do
 
     def ir({:assign, name, expr}) do
         [{:push, name}] ++ ir(expr) ++ [:assign]
+    end
+
+    def ir({:exit}) do
+        [:ret]
+    end
+
+    def ir({:table}) do
+        [:sym]
     end
 
     def ir(tree) when is_list(tree) do

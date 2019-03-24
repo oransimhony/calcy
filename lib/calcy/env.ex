@@ -12,6 +12,10 @@ defmodule Calcy.Env do
         GenServer.call(server, {:lookup, name})
     end
 
+    def all(server) do
+        GenServer.call(server, :all)
+    end
+
     def assign(server, name, value) do
         GenServer.cast(server, {:assign, name, value})
     end
@@ -22,6 +26,10 @@ defmodule Calcy.Env do
 
     def handle_call({:lookup, name}, _from, env) do
         {:reply, Map.fetch(env, name), env}
+    end
+
+    def handle_call(:all, _from, env) do
+        {:reply, env, env}
     end
 
     def handle_cast({:assign, name, value}, env) do

@@ -7,11 +7,10 @@ FLOAT = [+|-]*{NUMBER}+\.{NUMBER}+
 IDENT = [A-Za-z_][A-Za-z0-9_]*
 NEWLINE = [\n|\r\n]
 IGNORE = [\s\t]
-STACK = [stack]
 
 Rules.
 
-stack : {token, {stack, TokenLine, list_to_atom(TokenChars)}}. 
+table : {token, {table, TokenLine, list_to_atom(TokenChars)}}. 
 exit : {token, {exit, TokenLine, list_to_atom(TokenChars)}}. 
 {IDENT} : {token, {ident, TokenLine, list_to_atom(TokenChars)}}. 
 {INT} : {token, {int, TokenLine, list_to_integer(TokenChars)}}. 

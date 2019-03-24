@@ -60,7 +60,7 @@ calcy> perimeter = pi * diameter
 ```
 To see list of variables use
 ```elixir
-calcy> stack
+calcy> table
 e:      2.718281828459045
 pi:     3.141592653589793
 ```

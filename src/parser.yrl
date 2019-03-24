@@ -2,7 +2,7 @@ Nonterminals
 root expression term number factor assignment lines line.
 
 Terminals
-int float plus minus mult divi pow asgn lparen rparen ident sep stack exit.
+int float plus minus mult divi pow asgn lparen rparen ident sep table exit.
 
 Rootsymbol root.
 
@@ -13,7 +13,7 @@ lines -> line sep lines : ['$1', '$3'].
 
 line -> expression : '$1'.
 line -> assignment : '$1'.
-line -> stack : { stack }. 
+line -> table : { table }. 
 line -> exit : { exit }. 
 line -> '$empty' : [] . 
 
