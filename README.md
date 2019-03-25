@@ -74,4 +74,4 @@ Bye bye :)
 Thank you for reading! Have fun using it ✨
 
 ## Authors
-*  **Oran Simhony** - [ohmn123](https://github.com/ohmn123)
+*  **Oran Simhony** - [oransimhony](https://github.com/oransimhony)
