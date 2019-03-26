@@ -22,6 +22,10 @@ Build the application using
 mix compile
 mix escript.build
 ```
+Or using make
+```
+make build
+```
 Run using
 ```
 ./calcy
@@ -30,6 +34,22 @@ Run using
 > ```
 > chmod +x ./calcy
 > ```
+Or using make
+```
+make
+```
+Or
+```
+make run
+```
+Clean using
+```
+make clean
+```
+And run iex with the project files using
+```
+make console
+```
 
 ## Usage
 Write any expression normally
@@ -74,4 +94,4 @@ Bye bye :)
 Thank you for reading! Have fun using it ✨
 
 ## Authors
-*  **Oran Simhony** - [ohmn123](https://github.com/ohmn123)
+*  **Oran Simhony** - [oransimhony](https://github.com/oransimhony)
