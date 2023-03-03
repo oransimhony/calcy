@@ -9,7 +9,7 @@ For this program to work you need to have [Elixir](https://elixir-lang.org/insta
 
 Clone to your computer using
 ```
-https://github.com/ohmn123/calcy.git
+https://github.com/oransimhony/calcy.git
 ```
 
 ## Running
